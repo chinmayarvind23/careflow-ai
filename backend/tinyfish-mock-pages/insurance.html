@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accepted Insurance Plans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+    .header {
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #6b7280;
+      font-size: 14px;
+    }
+    .search {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+    }
+    .search input {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+    .search button {
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 10px;
+      background: #111827;
+      color: white;
+      cursor: pointer;
+    }
+    .card {
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    thead {
+      background: #f9fafb;
+    }
+    th, td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      vertical-align: top;
+    }
+    .accepted-yes {
+      color: #065f46;
+      background: #d1fae5;
+      padding: 6px 10px;
+      border-radius: 999px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .accepted-no {
+      color: #991b1b;
+      background: #fee2e2;
+      padding: 6px 10px;
+      border-radius: 999px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .topnote {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title">Accepted Insurance Plans</div>
+      <div class="subtitle">Home Health Agency Contracted Payers and Referral Acceptance Matrix</div>
+      <div class="search">
+        <input type="text" placeholder="Search payer name..." />
+        <button>Search</button>
+      </div>
+      <div class="topnote">
+        Use this directory to verify whether a referral payer is contracted for intake acceptance.
+      </div>
+    </div>
+
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Payer</th>
+            <th>Plan Type</th>
+            <th>Accepted</th>
+            <th>Prior Auth</th>
+            <th>Referral Phone</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Aetna Medicare</td><td>Medicare Advantage</td><td><span class="accepted-yes">Accepted</span></td><td>Case dependent</td><td>(800) 555-1001</td><td>Common referral volume</td></tr>
+          <tr><td>Humana Gold Plus</td><td>Medicare Advantage</td><td><span class="accepted-yes">Accepted</span></td><td>Sometimes required</td><td>(800) 555-1002</td><td>Verify PCP assignment</td></tr>
+          <tr><td>UnitedHealthcare Medicare</td><td>Medicare Advantage</td><td><span class="accepted-yes">Accepted</span></td><td>Case dependent</td><td>(800) 555-1003</td><td>High-volume payer</td></tr>
+          <tr><td>Blue Cross Blue Shield PPO</td><td>Commercial PPO</td><td><span class="accepted-yes">Accepted</span></td><td>Typically not required</td><td>(800) 555-1004</td><td>Broad network acceptance</td></tr>
+          <tr><td>Blue Cross Blue Shield HMO</td><td>Commercial HMO</td><td><span class="accepted-no">Not Accepted</span></td><td>Required</td><td>(800) 555-1005</td><td>Out of network for this branch</td></tr>
+          <tr><td>Cigna Open Access</td><td>Commercial PPO</td><td><span class="accepted-yes">Accepted</span></td><td>No</td><td>(800) 555-1006</td><td>Accepted for standard services</td></tr>
+          <tr><td>Cigna Medicare</td><td>Medicare Advantage</td><td><span class="accepted-no">Not Accepted</span></td><td>Required</td><td>(800) 555-1007</td><td>Not contracted in current market</td></tr>
+          <tr><td>Anthem Blue Cross</td><td>Commercial PPO</td><td><span class="accepted-yes">Accepted</span></td><td>Case dependent</td><td>(800) 555-1008</td><td>Check branch-level coverage</td></tr>
+          <tr><td>Anthem Senior Advantage</td><td>Medicare Advantage</td><td><span class="accepted-yes">Accepted</span></td><td>Sometimes required</td><td>(800) 555-1009</td><td>Accepted for SN/PT/OT</td></tr>
+          <tr><td>Medicare</td><td>Traditional Medicare</td><td><span class="accepted-yes">Accepted</span></td><td>No</td><td>(800) 555-1010</td><td>Default accepted payer</td></tr>
+          <tr><td>Medicaid</td><td>State Medicaid</td><td><span class="accepted-yes">Accepted</span></td><td>Service dependent</td><td>(800) 555-1011</td><td>Verify managed plan carve-outs</td></tr>
+          <tr><td>Molina Medicaid</td><td>Managed Medicaid</td><td><span class="accepted-no">Not Accepted</span></td><td>Required</td><td>(800) 555-1012</td><td>Not accepted by this branch</td></tr>
+          <tr><td>Centene Medicare</td><td>Medicare Advantage</td><td><span class="accepted-no">Not Accepted</span></td><td>Required</td><td>(800) 555-1013</td><td>Pending contract renewal</td></tr>
+          <tr><td>Wellcare Medicare</td><td>Medicare Advantage</td><td><span class="accepted-yes">Accepted</span></td><td>Case dependent</td><td>(800) 555-1014</td><td>Accepted with intake verification</td></tr>
+          <tr><td>Tricare East</td><td>Government</td><td><span class="accepted-yes">Accepted</span></td><td>No</td><td>(800) 555-1015</td><td>Accepted under specialty routing</td></tr>
+          <tr><td>VA Community Care</td><td>Government</td><td><span class="accepted-yes">Accepted</span></td><td>Authorization required</td><td>(800) 555-1016</td><td>Need referral authorization number</td></tr>
+          <tr><td>Oscar Health</td><td>Commercial</td><td><span class="accepted-no">Not Accepted</span></td><td>Required</td><td>(800) 555-1017</td><td>No contract</td></tr>
+          <tr><td>Ambetter</td><td>Commercial Exchange</td><td><span class="accepted-no">Not Accepted</span></td><td>Required</td><td>(800) 555-1018</td><td>Out of network</td></tr>
+          <tr><td>Kaiser Permanente</td><td>Integrated HMO</td><td><span class="accepted-no">Not Accepted</span></td><td>Internal only</td><td>(800) 555-1019</td><td>Not externally accepted</td></tr>
+          <tr><td>UHC Community Plan</td><td>Managed Medicaid</td><td><span class="accepted-yes">Accepted</span></td><td>Case dependent</td><td>(800) 555-1020</td><td>Accepted for select ZIPs</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

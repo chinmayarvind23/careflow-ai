@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Serviceable ZIP Codes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+    .header {
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #6b7280;
+      font-size: 14px;
+    }
+    .search {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+    }
+    .search input {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+    .search button {
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 10px;
+      background: #111827;
+      color: white;
+      cursor: pointer;
+    }
+    .card {
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    thead {
+      background: #f9fafb;
+    }
+    th, td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      vertical-align: top;
+    }
+    .yes {
+      color: #065f46;
+      background: #d1fae5;
+      padding: 6px 10px;
+      border-radius: 999px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .no {
+      color: #991b1b;
+      background: #fee2e2;
+      padding: 6px 10px;
+      border-radius: 999px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .topnote {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title">Serviceable ZIP Codes</div>
+      <div class="subtitle">Coverage matrix for branch-based home health routing</div>
+      <div class="search">
+        <input type="text" placeholder="Search ZIP code..." />
+        <button>Search</button>
+      </div>
+      <div class="topnote">
+        Use this directory to verify whether the patient ZIP falls within an active service area.
+      </div>
+    </div>
+
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>ZIP</th>
+            <th>City</th>
+            <th>County</th>
+            <th>Branch</th>
+            <th>Serviceable</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>75001</td><td>Addison</td><td>Dallas</td><td>Dallas North</td><td><span class="yes">Yes</span></td><td>Core coverage</td></tr>
+          <tr><td>75006</td><td>Carrollton</td><td>Dallas</td><td>Dallas North</td><td><span class="yes">Yes</span></td><td>Core coverage</td></tr>
+          <tr><td>75007</td><td>Carrollton</td><td>Denton</td><td>Dallas North</td><td><span class="yes">Yes</span></td><td>Standard routing</td></tr>
+          <tr><td>75019</td><td>Coppell</td><td>Dallas</td><td>Dallas North</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75024</td><td>Plano</td><td>Collin</td><td>Plano</td><td><span class="yes">Yes</span></td><td>High demand zone</td></tr>
+          <tr><td>75025</td><td>Plano</td><td>Collin</td><td>Plano</td><td><span class="yes">Yes</span></td><td>High demand zone</td></tr>
+          <tr><td>75034</td><td>Frisco</td><td>Collin</td><td>Plano</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75035</td><td>Frisco</td><td>Collin</td><td>Plano</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75039</td><td>Irving</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75040</td><td>Garland</td><td>Dallas</td><td>Dallas East</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75041</td><td>Garland</td><td>Dallas</td><td>Dallas East</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75042</td><td>Garland</td><td>Dallas</td><td>Dallas East</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75043</td><td>Garland</td><td>Dallas</td><td>Dallas East</td><td><span class="no">No</span></td><td>Over capacity</td></tr>
+          <tr><td>75044</td><td>Garland</td><td>Dallas</td><td>Dallas East</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75048</td><td>Sachse</td><td>Dallas</td><td>Dallas East</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75052</td><td>Grand Prairie</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75056</td><td>The Colony</td><td>Denton</td><td>Plano</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75201</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Core downtown coverage</td></tr>
+          <tr><td>75202</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Core downtown coverage</td></tr>
+          <tr><td>75203</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75204</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75205</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75206</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75208</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75209</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75211</td><td>Dallas</td><td>Dallas</td><td>Dallas West</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75212</td><td>Dallas</td><td>Dallas</td><td>Dallas West</td><td><span class="no">No</span></td><td>Temporary staffing gap</td></tr>
+          <tr><td>75214</td><td>Dallas</td><td>Dallas</td><td>Dallas East</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75217</td><td>Dallas</td><td>Dallas</td><td>Dallas South</td><td><span class="no">No</span></td><td>Out of current service zone</td></tr>
+          <tr><td>75220</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75224</td><td>Dallas</td><td>Dallas</td><td>Dallas South</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75227</td><td>Dallas</td><td>Dallas</td><td>Dallas East</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75228</td><td>Dallas</td><td>Dallas</td><td>Dallas East</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75229</td><td>Dallas</td><td>Dallas</td><td>Dallas North</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75231</td><td>Dallas</td><td>Dallas</td><td>Dallas North</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75234</td><td>Dallas</td><td>Dallas</td><td>Dallas North</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75235</td><td>Dallas</td><td>Dallas</td><td>Dallas Central</td><td><span class="yes">Yes</span></td><td>Medical district priority</td></tr>
+          <tr><td>75236</td><td>Dallas</td><td>Dallas</td><td>Dallas South</td><td><span class="no">No</span></td><td>No active field team</td></tr>
+          <tr><td>75238</td><td>Dallas</td><td>Dallas</td><td>Dallas East</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+          <tr><td>75243</td><td>Dallas</td><td>Dallas</td><td>Dallas North</td><td><span class="yes">Yes</span></td><td>Accepted</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

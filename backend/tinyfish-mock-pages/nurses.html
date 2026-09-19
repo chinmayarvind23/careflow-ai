@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nurse Roster</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+    .header {
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #6b7280;
+      font-size: 14px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    thead {
+      background: #f9fafb;
+    }
+    th, td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      vertical-align: top;
+    }
+    .slot {
+      display: inline-block;
+      background: #e5e7eb;
+      border-radius: 999px;
+      padding: 5px 10px;
+      margin: 2px 6px 2px 0;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title">Registered Nurse & Therapy Roster</div>
+      <div class="subtitle">Use this roster to match patient services and service area coverage.</div>
+    </div>
+
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Specialties</th>
+            <th>ZIP Coverage</th>
+            <th>Available Slots</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sarah Nguyen, RN</td>
+            <td>RN</td>
+            <td>Skilled Nursing, PT Coordination, Post-Acute Intake</td>
+            <td>75201, 75202, 75203, 75204, 75205, 75206</td>
+            <td><span class="slot">Tomorrow 10:30 AM</span><span class="slot">Tomorrow 2:00 PM</span><span class="slot">Friday 9:00 AM</span></td>
+          </tr>
+          <tr>
+            <td>Michael Patel, PT</td>
+            <td>PT</td>
+            <td>PT, Mobility Training, Home Safety</td>
+            <td>75201, 75204, 75205, 75220, 75235</td>
+            <td><span class="slot">Tomorrow 1:00 PM</span><span class="slot">Friday 11:00 AM</span></td>
+          </tr>
+          <tr>
+            <td>Angela Brooks, OT</td>
+            <td>OT</td>
+            <td>OT, ADL Training, Rehab Intake</td>
+            <td>75211, 75224, 75227, 75228</td>
+            <td><span class="slot">Tomorrow 9:00 AM</span><span class="slot">Thursday 3:00 PM</span></td>
+          </tr>
+          <tr>
+            <td>Kevin Ramirez, ST</td>
+            <td>ST</td>
+            <td>ST, Speech Evaluation</td>
+            <td>75024, 75025, 75034, 75035</td>
+            <td><span class="slot">Friday 10:00 AM</span><span class="slot">Friday 1:30 PM</span></td>
+          </tr>
+          <tr>
+            <td>Priya Menon, RN</td>
+            <td>RN</td>
+            <td>Skilled Nursing, Wound Care, Chronic Disease Education</td>
+            <td>75229, 75231, 75234, 75243</td>
+            <td><span class="slot">Tomorrow 11:30 AM</span><span class="slot">Thursday 8:30 AM</span></td>
+          </tr>
+          <tr>
+            <td>Jacob Lee, MSW</td>
+            <td>MSW</td>
+            <td>MSW, Community Resource Referral</td>
+            <td>75201, 75211, 75224, 75235</td>
+            <td><span class="slot">Thursday 1:00 PM</span><span class="slot">Friday 2:00 PM</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

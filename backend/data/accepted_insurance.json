@@ -1,0 +1,22 @@
+[
+  { "payer": "Aetna Medicare", "plan_type": "Medicare Advantage", "accepted": true, "prior_auth": "Case dependent", "referral_phone": "(800) 555-1001", "notes": "Common referral volume" },
+  { "payer": "Humana Gold Plus", "plan_type": "Medicare Advantage", "accepted": true, "prior_auth": "Sometimes required", "referral_phone": "(800) 555-1002", "notes": "Verify PCP assignment" },
+  { "payer": "UnitedHealthcare Medicare", "plan_type": "Medicare Advantage", "accepted": true, "prior_auth": "Case dependent", "referral_phone": "(800) 555-1003", "notes": "High-volume payer" },
+  { "payer": "Blue Cross Blue Shield PPO", "plan_type": "Commercial PPO", "accepted": true, "prior_auth": "Typically not required", "referral_phone": "(800) 555-1004", "notes": "Broad network acceptance" },
+  { "payer": "Blue Cross Blue Shield HMO", "plan_type": "Commercial HMO", "accepted": false, "prior_auth": "Required", "referral_phone": "(800) 555-1005", "notes": "Out of network for this branch" },
+  { "payer": "Cigna Open Access", "plan_type": "Commercial PPO", "accepted": true, "prior_auth": "No", "referral_phone": "(800) 555-1006", "notes": "Accepted for standard services" },
+  { "payer": "Cigna Medicare", "plan_type": "Medicare Advantage", "accepted": false, "prior_auth": "Required", "referral_phone": "(800) 555-1007", "notes": "Not contracted in current market" },
+  { "payer": "Anthem Blue Cross", "plan_type": "Commercial PPO", "accepted": true, "prior_auth": "Case dependent", "referral_phone": "(800) 555-1008", "notes": "Check branch-level coverage" },
+  { "payer": "Anthem Senior Advantage", "plan_type": "Medicare Advantage", "accepted": true, "prior_auth": "Sometimes required", "referral_phone": "(800) 555-1009", "notes": "Accepted for SN/PT/OT" },
+  { "payer": "Medicare", "plan_type": "Traditional Medicare", "accepted": true, "prior_auth": "No", "referral_phone": "(800) 555-1010", "notes": "Default accepted payer" },
+  { "payer": "Medicaid", "plan_type": "State Medicaid", "accepted": true, "prior_auth": "Service dependent", "referral_phone": "(800) 555-1011", "notes": "Verify managed plan carve-outs" },
+  { "payer": "Molina Medicaid", "plan_type": "Managed Medicaid", "accepted": false, "prior_auth": "Required", "referral_phone": "(800) 555-1012", "notes": "Not accepted by this branch" },
+  { "payer": "Centene Medicare", "plan_type": "Medicare Advantage", "accepted": false, "prior_auth": "Required", "referral_phone": "(800) 555-1013", "notes": "Pending contract renewal" },
+  { "payer": "Wellcare Medicare", "plan_type": "Medicare Advantage", "accepted": true, "prior_auth": "Case dependent", "referral_phone": "(800) 555-1014", "notes": "Accepted with intake verification" },
+  { "payer": "Tricare East", "plan_type": "Government", "accepted": true, "prior_auth": "No", "referral_phone": "(800) 555-1015", "notes": "Accepted under specialty routing" },
+  { "payer": "VA Community Care", "plan_type": "Government", "accepted": true, "prior_auth": "Authorization required", "referral_phone": "(800) 555-1016", "notes": "Need referral authorization number" },
+  { "payer": "Oscar Health", "plan_type": "Commercial", "accepted": false, "prior_auth": "Required", "referral_phone": "(800) 555-1017", "notes": "No contract" },
+  { "payer": "Ambetter", "plan_type": "Commercial Exchange", "accepted": false, "prior_auth": "Required", "referral_phone": "(800) 555-1018", "notes": "Out of network" },
+  { "payer": "Kaiser Permanente", "plan_type": "Integrated HMO", "accepted": false, "prior_auth": "Internal only", "referral_phone": "(800) 555-1019", "notes": "Not externally accepted" },
+  { "payer": "UHC Community Plan", "plan_type": "Managed Medicaid", "accepted": true, "prior_auth": "Case dependent", "referral_phone": "(800) 555-1020", "notes": "Accepted for select ZIPs" }
+]

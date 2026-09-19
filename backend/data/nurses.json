@@ -1,0 +1,8 @@
+[
+  { "name": "Sarah Nguyen, RN", "role": "RN", "specialties": ["Skilled Nursing", "PT Coordination", "Post-Acute Intake"], "zip_coverage": ["75201", "75202", "75203", "75204", "75205", "75206"], "available_slots": ["Tomorrow 10:30 AM", "Tomorrow 2:00 PM", "Friday 9:00 AM"] },
+  { "name": "Michael Patel, PT", "role": "PT", "specialties": ["PT", "Mobility Training", "Home Safety"], "zip_coverage": ["75201", "75204", "75205", "75220", "75235"], "available_slots": ["Tomorrow 1:00 PM", "Friday 11:00 AM"] },
+  { "name": "Angela Brooks, OT", "role": "OT", "specialties": ["OT", "ADL Training", "Rehab Intake"], "zip_coverage": ["75211", "75224", "75227", "75228"], "available_slots": ["Tomorrow 9:00 AM", "Thursday 3:00 PM"] },
+  { "name": "Kevin Ramirez, ST", "role": "ST", "specialties": ["ST", "Speech Evaluation"], "zip_coverage": ["75024", "75025", "75034", "75035"], "available_slots": ["Friday 10:00 AM", "Friday 1:30 PM"] },
+  { "name": "Priya Menon, RN", "role": "RN", "specialties": ["Skilled Nursing", "Wound Care", "Chronic Disease Education"], "zip_coverage": ["75229", "75231", "75234", "75243"], "available_slots": ["Tomorrow 11:30 AM", "Thursday 8:30 AM"] },
+  { "name": "Jacob Lee, MSW", "role": "MSW", "specialties": ["MSW", "Community Resource Referral"], "zip_coverage": ["75201", "75211", "75224", "75235"], "available_slots": ["Thursday 1:00 PM", "Friday 2:00 PM"] }
+]
