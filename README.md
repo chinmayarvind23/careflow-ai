@@ -2,6 +2,8 @@
 
 **Agentic referral intake for home health.**
 
+Careflow.ai was built for the Origin House Hackathon 2026.
+
 Careflow.ai turns a hospital discharge packet into an intake-ready home-health referral. It combines document understanding, deterministic validation, and browser agents so intake teams can move from an uploaded PDF to eligibility, placement, and scheduling in one traceable workflow.
 
 **User:** home-health intake and operations teams.  
