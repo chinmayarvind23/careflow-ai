@@ -1,8 +1,8 @@
-# careflow.ai
+# Careflow.ai
 
 **Agentic referral intake for home health.**
 
-careflow.ai turns a hospital discharge packet into an intake-ready home-health referral. It combines document understanding, deterministic validation, and browser agents so intake teams can move from an uploaded PDF to eligibility, placement, and scheduling in one traceable workflow.
+Careflow.ai turns a hospital discharge packet into an intake-ready home-health referral. It combines document understanding, deterministic validation, and browser agents so intake teams can move from an uploaded PDF to eligibility, placement, and scheduling in one traceable workflow.
 
 **User:** home-health intake and operations teams.  
 **Input:** hospital discharge / referral PDFs.  
@@ -12,7 +12,7 @@ careflow.ai turns a hospital discharge packet into an intake-ready home-health r
 
 Home-health referral intake is operationally dense. Staff often have to read multi-page discharge packets, recover text from scans, extract patient and insurance details, normalize requested services, verify whether the payer is accepted, check ZIP coverage, place the referral, and start scheduling.
 
-careflow.ai compresses those handoffs into one system while keeping the workflow inspectable. The UI exposes agent state, observations, actions, logs, structured fields, and downstream operational decisions instead of hiding the process behind a single model response.
+Careflow.ai compresses those handoffs into one system while keeping the workflow inspectable. The UI exposes agent state, observations, actions, logs, structured fields, and downstream operational decisions instead of hiding the process behind a single model response.
 
 ## End-to-end workflow
 
@@ -72,7 +72,7 @@ Insurance and ZIP checks run concurrently, reducing unnecessary serial waiting b
 
 Browser-agent runs are streamed over SSE and tracked in the same visible agent-state model as the document pipeline.
 
-careflow.ai includes bounded execution behavior for operational continuity:
+Careflow.ai includes bounded execution behavior for operational continuity:
 
 - TinyFish runs expose live progress and browser-stream metadata.
 - Remote runs are cancelled if they exceed the configured execution window.
